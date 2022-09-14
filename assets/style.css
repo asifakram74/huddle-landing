@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* .................... Glooble Tags ......................... */
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 28px;
+    margin: 17px 0 0 5px;
+}
+
+/* ....................... section and container ............. */
+
+.mySection {
+    background-image: url('../images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ......................... content ............................ */
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 51px 0 20px 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin: 83px 0 0 0;
+}
+
+.content img {
+    width: 55%;
+}
+
+.images img {
+    width: 81%;
+}
+
+.bgText {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    width: 38%;
+    margin: 42px auto 0;
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-self: flex-end;
+    margin: 8px 0 0 0px;
+}
+
+li {
+    border: 1px solid white;
+    padding: 8px;
+    width: 40px;
+    text-align: center;
+    margin: 7px;
+    border-radius: 50%;
+    color: white;
+    list-style: none;
+}
+
+li .fa {
+    font-size: 18px;
+}
+
+li:hover {
+    color: #d353c2;
+    border: 1px solid #d353c2;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    width: 207px;
+    outline: none;
+    margin-top: 23px;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(257, 40%, 49%);
+}
+
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ............................ media query ........................ */
+@media screen and (max-width: 375px) {
+    .mySection {
+        background-image: url('../images/bg-mobile.svg');
+    }
+    .mainDiv {
+        padding: 42px 0 40px 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0 0
+    }
+
+    .content img {
+        width: 82%;
+    }
+
+    .text {
+        width: 84%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 15px 0 0 5px;
+    }
+
+    h1 {
+        font-family: Poppins, sans-serif;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .images img {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    ul {
+        margin: 40px 0 0 0px;
+        display: flex;
+        align-self: center;
+    }
+
+    li {
+        padding: 6px;
+        width: 35px;
+    }
+    .btn{
+        width: 240px;
+    }
+}
+
+/* .................................................. */
